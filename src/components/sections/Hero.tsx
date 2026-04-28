@@ -4,11 +4,24 @@ import { motion } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+// Dynamically import HeroCanvas (SSR disabled — WebGL is client-only)
+const HeroCanvas = dynamic(
+  () => import("@/components/canvas/HeroCanvas").then((mod) => mod.HeroCanvas),
+  { ssr: false }
+);
 
 export function Hero() {
   return (
-    <section id="home" className="min-h-[90vh] flex items-center pt-10 pb-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+    <section id="home" className="relative min-h-[90vh] flex items-center pt-10 pb-16 overflow-hidden">
+      {/* 3D Background Canvas */}
+      <HeroCanvas />
+
+      {/* Subtle gradient overlay for readability */}
+      <div className="absolute inset-0 z-[1] pointer-events-none bg-gradient-to-b from-transparent via-background/30 to-background/60 dark:via-background/40 dark:to-background/70"></div>
+
+      <div className="relative z-[2] container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div className="flex flex-col-reverse md:flex-row items-center gap-12 lg:gap-20">
           
           {/* Text Content */}
@@ -53,7 +66,7 @@ export function Hero() {
             </div>
           </motion.div>
 
-          {/* Image Placeholder */}
+          {/* Profile Photo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9, filter: "blur(10px)" }}
             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
