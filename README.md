@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MAHESH P PAI — Portfolio
 
-## Getting Started
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mahesh-p-pai-b0987b2a8/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MAHESHPPAI)
+[![Portfolio](https://img.shields.io/badge/Live_Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://maheshppai-v1.netlify.app)
 
-First, run the development server:
+A high-performance personal portfolio showcasing full-stack engineering expertise, architectural design, and a focus on transforming complex problems into elegant, automated solutions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+## 🚀 Overview
+
+This portfolio is a modern React-based web application built with a focus on immersive user experience (UX) and cinematic aesthetics. It features advanced scroll animations, interactive components, and a "Deep Dark" modernist design system.
+
+### Key Features
+- **Immersive Interactivity**: Splash cursor effects, vector bridge interactions, and fluid animations.
+- **Stack-based Project Display**: A custom-engineered scroll stack for showcasing selected works with CSS-in-JS and GSAP power.
+- **Parallax Storytelling**: Multi-layered parallax reveals and scroll-triggered content transitions.
+- **Responsive Architecture**: Fully optimized for mobile, tablet, and desktop viewports.
+- **Mechanical UX**: Integrated smooth-scrolling using Lenis for a tactile feel.
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend** | React 18, TypeScript, Vite |
+| **Styling** | Tailwind CSS, shadcn/ui, Radix UI |
+| **Animation** | Framer Motion, GSAP |
+| **Scrolling** | Lenis Scroll, ScrollVelocity |
+| **Validation** | Zod, React Hook Form |
+| **Icons** | Lucide React |
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/     # Reusable UI components (Navigation, StarBorder, etc.)
+├── pages/          # Layout sections (Hero, About, SelectedWorks, Contact)
+├── lib/            # Utility functions and library wrappers
+├── hooks/          # Custom React hooks
+└── assets/         # Static assets and styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or bun
 
-## Learn More
+### Local Development
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/MAHESHPPAI/portfolio-website.git
+   cd Portfolio-website
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   bun install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📬 Contact
+
+Let's build something intelligent.
+
+- **Email**: [maheshpailinked@gmail.com](mailto:maheshpailinked@gmail.com)
+- **Instagram**: [_.maheshhhhhh._](https://www.instagram.com/_.maheshhhhhh._/)
+- **Availability**: Currently available for freelance and full-time opportunities.
+
+---
+
+<p align="center">
+  MADE BY MAHESH ® 2026
+</p>
