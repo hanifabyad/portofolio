@@ -191,7 +191,7 @@ const Index = () => {
         <div className="h-[32px] w-full md:hidden" /> {/* py-12 (48px) + 32px = 80px */}
 
         {/* Dynamic Centering Container for Mobile Socials */}
-        <div className="flex-1 flex flex-col items-end justify-center md:hidden pr-0 z-10 pointer-events-none">
+        <div className="flex-1 flex flex-col items-end justify-center md:hidden pr-4 z-10 pointer-events-none">
           <div className="pointer-events-auto">
             <MobileSocialStrip />
           </div>
@@ -211,7 +211,7 @@ const Index = () => {
                 <path d="M1 6h10M6 1l5 5-5 5" />
               </svg>
             </a>
-            <h1 className="font-sans font-bold text-7xl md:text-8xl lg:text-[9rem] xl:text-[11rem] leading-[0.85] tracking-tighter text-white uppercase text-left">
+            <h1 className="font-sans font-bold text-[12vw] sm:text-7xl md:text-8xl lg:text-[9rem] xl:text-[11rem] leading-[0.85] tracking-tighter text-white uppercase text-left break-words">
               Full Stack<br />Programmer
             </h1>
           </motion.div>
