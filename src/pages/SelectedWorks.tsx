@@ -84,7 +84,7 @@ const ScrollStackCard = ({ project, index }: ScrollStackCardProps) => {
               <img
                 key={i}
                 src={img}
-                className="main-image flex-1 object-contain h-full bg-[#111] rounded-[20px]"
+                className="main-image flex-1 object-contain h-full bg-[#111] rounded-[20px] max-w-[calc(33.33%-0.75rem)]"
                 alt={`${project.title} - ${i + 1}`}
                 onLoad={() => window.dispatchEvent(new Event('resize'))}
               />
@@ -92,7 +92,7 @@ const ScrollStackCard = ({ project, index }: ScrollStackCardProps) => {
           ) : (
             <img
               src={project.image}
-              className="main-image w-full h-full object-cover rounded-[40px]"
+              className="web-image w-full h-full object-cover rounded-[40px]"
               alt={project.title}
               onLoad={() => window.dispatchEvent(new Event('resize'))}
             />

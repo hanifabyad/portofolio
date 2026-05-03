@@ -73,7 +73,7 @@
 /* The wrapper that StarBorder creates */
 .scroll-stack-card {
   width: 92%;
-  max-width: 1200px;
+  max-width: 1400px;
   height: auto;
   max-height: 78vh;
   margin-bottom: 2rem;
@@ -91,7 +91,7 @@
 .scroll-stack-card>.inner-content {
   background-color: #000 !important;
   border-radius: 60px !important;
-  padding: 2.5rem !important;
+  padding: 3rem !important;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -163,9 +163,9 @@
 /* --- CONTENT GRID (Image + Description) --- */
 .content-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 2rem;
-  height: min(350px, 40vh);
+  height: min(450px, 50vh);
   flex: 1;
   align-items: stretch;
 }
@@ -181,7 +181,13 @@
   object-fit: contain;
   background: #111;
   border-radius: 20px;
-  max-width: calc(33.33% - 0.75rem); /* Space for 3 images with gaps */
+}
+
+.web-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
 }
 
 .project-description {
