@@ -37,7 +37,7 @@ const About = () => {
   const opacity4 = useTransform(scrollY, [vh * 0.3, vh * 0.6], [0, 1]);
 
   return (
-    <section className="h-screen w-full bg-white text-black font-sans px-6 md:px-12 lg:px-16 overflow-hidden flex items-center justify-center relative">
+    <section className="min-h-screen w-full bg-white text-black font-sans px-6 md:px-12 lg:px-16 flex items-start md:items-center justify-center relative pt-32 pb-20 md:pt-20 md:pb-20">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 md:gap-x-12 w-full max-w-[1600px] mx-auto">
 
         {/* Left Column: Context Label */}
@@ -51,7 +51,7 @@ const About = () => {
         </motion.div>
 
         {/* Right Column: The Data List */}
-        <div className="md:col-span-9 lg:col-span-9 flex flex-col gap-10 md:gap-12">
+        <div className="md:col-span-9 lg:col-span-9 flex flex-col gap-20 md:gap-24">
 
           {/* 01. EDUCATION */}
           <motion.div style={{ y: y2, opacity: opacity2 }} className="flex flex-col gap-2">
@@ -64,7 +64,7 @@ const About = () => {
                   Politeknik Negeri Batam
                 </p>
                 <p className="font-sans text-xl md:text-2xl lg:text-3xl font-normal text-black/70 leading-tight tracking-tight">
-                  Applied Bachelor, Software Engineering (2022–Present)
+                  Software Engineer (2022–Present)
                 </p>
               </div>
               <div>

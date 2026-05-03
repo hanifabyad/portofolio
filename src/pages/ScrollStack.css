@@ -177,6 +177,13 @@
   border-radius: 40px;
 }
 
+.image-container .main-image {
+  object-fit: contain;
+  background: #111;
+  border-radius: 20px;
+  max-width: calc(33.33% - 0.75rem); /* Space for 3 images with gaps */
+}
+
 .project-description {
   display: flex;
   align-items: center;

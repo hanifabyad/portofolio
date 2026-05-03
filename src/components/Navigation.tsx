@@ -23,7 +23,7 @@ const socialItems: SocialItem[] = [
   { label: "GitHub", href: "https://github.com/hanifabyad" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/hanifabyad/" },
   { label: "Instagram", href: "https://www.instagram.com/hanifabyad/" },
-  { label: "Email", href: "mailto:hanifabyad@gmail.com" },
+  { label: "Email", href: "mailto:hanipabyad79@gmail.com" },
 ];
 
 const ease = [0.76, 0, 0.24, 1] as [number, number, number, number];

@@ -15,30 +15,30 @@ const projects = [
   },
   {
     id: "002",
-    title: "HOMI: Admin Dashboard",
-    stack: "Laravel / MySQL / Bootstrap",
-    description: "A comprehensive management system for housing administrators to manage residents, complaints, and financial reports.",
-    links: { live: "#", code: "#" },
-    image: "/projects/homi-admin.png",
-    cta: "Internal Tool"
-  },
-  {
-    id: "003",
-    title: "HOMI: Mobile App",
-    stack: "Kotlin / Android SDK / REST API",
-    description: "A resident-facing mobile application for making reports, viewing announcements, and managing housing services on the go.",
-    links: { live: "#", code: "#" },
-    image: "/projects/homi-app.png",
-    cta: "App Preview"
-  },
-  {
-    id: "004",
     title: "AI Pothole Detection App",
     stack: "Kotlin / YOLOv8 / Laravel",
     description: "An AI-powered mobile application that automatically detects road potholes using computer vision to assist in infrastructure maintenance.",
     links: { live: "#", code: "#" },
-    image: "/projects/lumine.png",
+    images: ["/projects/ai pothole (1).png", "/projects/ai pothole (2).png", "/projects/ai pothole (3).png"],
     cta: "Github Repo"
+  },
+  {
+    id: "003",
+    title: "BabyBites: MPASI Guide",
+    stack: "React / TailwindCSS / Mobile-Friendly",
+    description: "A comprehensive digital guide for parents starting their baby's MPASI journey. Features recipes, nutrition tips, and a community support system.",
+    links: { live: "#", code: "#" },
+    image: "/projects/babybites.png",
+    cta: "View Guide"
+  },
+  {
+    id: "004",
+    title: "PilahYuk: Waste Management",
+    stack: "Kotlin / Firebase / Google Maps API",
+    description: "A digital waste management platform that connects households with waste collectors. Features real-time tracking and a point-based reward system.",
+    links: { live: "#", code: "#" },
+    images: ["/projects/pilahyuk (1).png", "/projects/pilahyuk (2).png", "/projects/pilahyuk (3).png"],
+    cta: "App Preview"
   },
 ];
 
@@ -78,12 +78,26 @@ const ScrollStackCard = ({ project, index }: ScrollStackCardProps) => {
       </div>
 
       <div className="content-grid">
-        <img
-          src={project.image}
-          className="main-image w-full h-auto object-contain"
-          alt={project.title}
-          onLoad={() => window.dispatchEvent(new Event('resize'))}
-        />
+        <div className="image-container flex gap-4 overflow-hidden h-full">
+          {project.images ? (
+            project.images.map((img, i) => (
+              <img
+                key={i}
+                src={img}
+                className="main-image flex-1 object-contain h-full bg-[#111] rounded-[20px]"
+                alt={`${project.title} - ${i + 1}`}
+                onLoad={() => window.dispatchEvent(new Event('resize'))}
+              />
+            ))
+          ) : (
+            <img
+              src={project.image}
+              className="main-image w-full h-full object-cover rounded-[40px]"
+              alt={project.title}
+              onLoad={() => window.dispatchEvent(new Event('resize'))}
+            />
+          )}
+        </div>
         <div className="project-description">
           <p>{project.description}</p>
         </div>

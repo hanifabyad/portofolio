@@ -69,7 +69,7 @@ const SocialStrip = () => {
     { label: "GitHub", href: "https://github.com/hanifabyad" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/hanifabyad/" },
     { label: "Instagram", href: "https://www.instagram.com/hanifabyad/" },
-    { label: "Email", href: "mailto:hanifabyad@gmail.com" },
+    { label: "Email", href: "mailto:hanipabyad79@gmail.com" },
   ];
   return (
     <motion.div
@@ -140,7 +140,7 @@ const MobileSocialStrip = () => {
     { label: "Github", icon: Github, href: "https://github.com/hanifabyad" },
     { label: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/hanifabyad/" },
     { label: "Instagram", icon: Instagram, href: "https://www.instagram.com/hanifabyad/" },
-    { label: "Email", icon: Mail, href: "mailto:hanifabyad@gmail.com" },
+    { label: "Email", icon: Mail, href: "mailto:hanipabyad79@gmail.com" },
   ];
   return (
     <motion.div
